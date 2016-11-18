@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="actions">
+        <item>@drawable/ic_3d_rotation_black_160dp</item>
+    </array>
+</resources>
