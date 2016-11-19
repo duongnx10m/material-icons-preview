@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.duongnx.materialicons.GApplication;
 import com.duongnx.materialicons.R;
 import com.duongnx.materialicons.adapter.AdapterIconPreview;
 import com.duongnx.materialicons.models.ItemIcon;
@@ -33,10 +34,7 @@ public class FrgIconPreview extends FrgBase {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         if (mAdapter == null) {
-            ArrayList<ItemIcon> itemIcons = new ArrayList<>();
-            itemIcons.add(new ItemIcon(R.drawable.ic_3d_rotation_black_160dp, "3D Rotation"));
-            mAdapter = new AdapterIconPreview(mActivity, itemIcons);
-
+            mAdapter = new AdapterIconPreview(mActivity, GApplication.getInstance().getIconActions());
         }
         recyclerView.setAdapter(mAdapter);
     }

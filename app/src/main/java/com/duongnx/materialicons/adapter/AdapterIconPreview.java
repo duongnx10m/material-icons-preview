@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.duongnx.materialicons.R;
 import com.duongnx.materialicons.models.ItemIcon;
@@ -49,14 +50,17 @@ public class AdapterIconPreview extends RecyclerView.Adapter<AdapterIconPreview.
 
     public class VhIconPreview extends RecyclerView.ViewHolder {
         private ImageView ivContent;
+        private TextView tvTitle;
 
         public VhIconPreview(View itemView) {
             super(itemView);
             ivContent = (ImageView) itemView.findViewById(R.id.ivContent);
+            tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
         }
 
         public void setContent(ItemIcon itemIcon) {
-            //ivContent.setImageBitmap(itemSticker.getBitmap());
+            ivContent.setImageResource(itemIcon.getResId());
+            tvTitle.setText(itemIcon.getName());
         }
 
 

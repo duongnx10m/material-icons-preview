@@ -2,14 +2,28 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
 
     <ImageView
         android:id="@+id/ivContent"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/ic_3d_rotation_black_160dp" />
 
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivContent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="3D Rotation"
+        android:textColor="@color/grey_600"
+        android:textSize="16sp" />
 
 </RelativeLayout>
