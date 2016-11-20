@@ -22,7 +22,9 @@ public class GApplication extends Application {
     private ArrayList<ItemIcon> iconAVs = null;
     private ArrayList<ItemIcon> iconCommunications = null;
     private ArrayList<ItemIcon> iconContents = null;
-    private ArrayList<ItemIcon> icons;
+    private ArrayList<ItemIcon> iconsDevices = null;
+    private ArrayList<ItemIcon> iconEditors = null;
+    private ArrayList<ItemIcon> iconFiles = null;
 
 
     public static GApplication getInstance() {
@@ -34,6 +36,14 @@ public class GApplication extends Application {
         super.onCreate();
         instance = this;
         setColorTint(ContextCompat.getColor(getApplicationContext(), R.color.grey_600));
+    }
+
+    public int getColorTint() {
+        return colorTint;
+    }
+
+    public void setColorTint(int colorTint) {
+        this.colorTint = colorTint;
     }
 
     public ArrayList<ItemIcon> getIconActions() {
@@ -72,11 +82,24 @@ public class GApplication extends Application {
         return iconContents;
     }
 
-    public int getColorTint() {
-        return colorTint;
+    public ArrayList<ItemIcon> getIconsDevices() {
+        if (iconsDevices == null) {
+            iconsDevices = GenerateHelper.getIconsDevices();
+        }
+        return iconsDevices;
     }
 
-    public void setColorTint(int colorTint) {
-        this.colorTint = colorTint;
+    public ArrayList<ItemIcon> getIconEditors() {
+        if (iconEditors == null) {
+            iconEditors = GenerateHelper.getIconEditors();
+        }
+        return iconEditors;
+    }
+
+    public ArrayList<ItemIcon> getIconFiles() {
+        if (iconFiles == null) {
+            iconFiles = GenerateHelper.getIconFiles();
+        }
+        return iconFiles;
     }
 }

@@ -25,6 +25,20 @@
             android:icon="@drawable/ic_move_to_inbox_black_120dp"
             android:title="@string/contents" />
 
+        <item
+            android:id="@+id/nav_device"
+            android:icon="@drawable/ic_signal_wifi_2_bar_black_120dp"
+            android:title="@string/devices" />
+
+        <item
+            android:id="@+id/nav_editor"
+            android:icon="@drawable/ic_attach_file_black_120dp"
+            android:title="@string/editors" />
+
+        <item
+            android:id="@+id/nav_file"
+            android:icon="@drawable/ic_folder_open_black_120dp"
+            android:title="@string/files" />
     </group>
 
 </menu>

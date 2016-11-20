@@ -11,5 +11,7 @@
     <string name="avs">Avs</string>
     <string name="communications">Communications</string>
     <string name="contents">Contents</string>
-
+    <string name="devices">Devices</string>
+    <string name="editors">Editors</string>
+    <string name="files">Files</string>
 </resources>

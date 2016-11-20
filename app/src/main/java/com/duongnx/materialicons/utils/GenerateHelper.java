@@ -245,4 +245,105 @@ public class GenerateHelper {
         iconContents.add(new ItemIcon(R.drawable.ic_weekend_black_120dp, "Weekend"));
         return iconContents;
     }
+
+    public static ArrayList<ItemIcon> getIconsDevices() {
+        ArrayList<ItemIcon> iconsDevices = new ArrayList<>();
+        iconsDevices.add(new ItemIcon(R.drawable.ic_airplanemode_active_black_120dp, "AirPlane Mode Active"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_airplanemode_inactive_black_120dp, "AirPlane Mode Inactive"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_20_black_120dp, "Battery 20"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_30_black_120dp, "Battery 30"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_50_black_120dp, "Battery 50"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_60_black_120dp, "Battery 60"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_80_black_120dp, "Battery 80"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_80_black_120dp, "Battery 90"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_alert_black_120dp, "Battery Alert"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_charging_20_black_120dp, "Battery Charging 20"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_charging_30_black_120dp, "Battery Charging 30"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_charging_50_black_120dp, "Battery Charging 50"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_charging_60_black_120dp, "Battery Charging 600"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_charging_80_black_120dp, "Battery Charging 80"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_charging_90_black_120dp, "Battery Charging 90"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_charging_full_black_120dp, "Battery Charging Full"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_full_black_120dp, "Battery Full"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_battery_unknown_black_120dp, "Battery Unknown"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_bluetooth_black_120dp, "Bluetooth"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_bluetooth_connected_black_120dp, "Bluetooth Connected"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_bluetooth_disabled_black_120dp, "Bluetooth Disabled"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_bluetooth_searching_black_120dp, "Bluetooth Searching"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_brightness_auto_black_120dp, "Brightness Auto"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_brightness_high_black_120dp, "Brightness High"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_brightness_low_black_120dp, "Brightness Low"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_brightness_medium_black_120dp, "Brightness Medium"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_data_usage_black_120dp, "Data Usage"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_developer_mode_black_120dp, "Developer Mode"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_devices_black_120dp, "Devices"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_dvr_black_120dp, "Dvr"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_gps_fixed_black_120dp, "GPS Fixed"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_gps_not_fixed_black_120dp, "GPS Not Fixed"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_gps_off_black_120dp, "GPS Off"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_graphic_eq_black_120dp, "Graphic EQ"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_network_cell_black_120dp, "Network Cell"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_network_wifi_black_120dp, "Wifi"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_nfc_black_120dp, "NFC"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_screen_lock_landscape_black_120dp, "Screen Lock"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_screen_lock_portrait_black_120dp, "Screen Lock"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_screen_lock_rotation_black_120dp, "Screen Lock Rotation"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_screen_rotation_black_120dp, "Screen Rotation"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_sd_storage_black_120dp, "SD Storage"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_settings_system_daydream_black_120dp, "Setting System"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_0_bar_black_120dp, "Signal Cellular 0"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_1_bar_black_120dp, "Signal Cellular 1"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_2_bar_black_120dp, "Signal Cellular 2"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_3_bar_black_120dp, "Signal Cellular 3"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_4_bar_black_120dp, "Signal Cellular 4"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_connected_no_internet_0_bar_black_120dp, "No Internet 0"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_connected_no_internet_1_bar_black_120dp, "No Internet 1"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_connected_no_internet_2_bar_black_120dp, "No Internet 2"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_connected_no_internet_3_bar_black_120dp, "No Internet 3"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_connected_no_internet_4_bar_black_120dp, "No Internet 4"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_no_sim_black_120dp, "No Sim"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_null_black_120dp, "Signal Cellular Null"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_cellular_off_black_120dp, "Signal Cellular Off"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_0_bar_black_120dp, "Signal Wifi 0"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_1_bar_black_120dp, "Signal Wifi 1"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_1_bar_lock_black_120dp, "Signal Wifi 1 Lock"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_2_bar_black_120dp, "Signal Wifi 2"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_2_bar_lock_black_120dp, "Signal Wifi 2 Lock"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_3_bar_black_120dp, "Signal Wifi 3"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_3_bar_lock_black_120dp, "Signal Wifi 3 Lock"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_4_bar_black_120dp, "Signal Wifi 4"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_4_bar_lock_black_120dp, "Signal Wifi 4 Lock"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_signal_wifi_off_black_120dp, "Wifi Off"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_storage_black_120dp, "Storage"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_usb_black_120dp, "USB"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_wallpaper_black_120dp, "Wall Paper"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_widgets_black_120dp, "Widgets"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_wifi_lock_black_120dp, "Wifi Lock"));
+        iconsDevices.add(new ItemIcon(R.drawable.ic_wifi_tethering_black_120dp, "Wifi Tethering"));
+        return iconsDevices;
+    }
+
+    public static ArrayList<ItemIcon> getIconEditors() {
+        ArrayList<ItemIcon> iconEditors = new ArrayList<>();
+        iconEditors.add(new ItemIcon(R.drawable.ic_attach_file_black_120dp, "Attachment"));
+        return iconEditors;
+    }
+
+    public static ArrayList<ItemIcon> getIconFiles() {
+        ArrayList<ItemIcon> iconFiles = new ArrayList<>();
+        iconFiles.add(new ItemIcon(R.drawable.ic_attachment_black_120dp, "Attachment"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_folder_open_black_120dp, "Folder Open"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_cloud_black_120dp, "Cloud"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_cloud_circle_black_120dp, "Cloud Circle"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_cloud_done_black_120dp, "Cloud Done"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_cloud_download_black_120dp, "Cloud Download"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_cloud_off_black_120dp, "Cloud Off"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_cloud_upload_black_120dp, "Cloud Upload"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_create_new_folder_black_120dp, "New Folder"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_file_download_black_120dp, "File Download"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_file_upload_black_120dp, "File Upload"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_folder_black_120dp, "Folder"));
+        iconFiles.add(new ItemIcon(R.drawable.ic_folder_shared_black_120dp, "Folder Shared"));
+        return iconFiles;
+    }
 }

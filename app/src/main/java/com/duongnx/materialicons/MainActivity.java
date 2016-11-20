@@ -126,6 +126,18 @@ public class MainActivity extends AppCompatActivity
                 setTitle(R.string.contents);
                 changeMenu(GApplication.getInstance().getIconContents());
                 break;
+            case R.id.nav_device:
+                setTitle(R.string.devices);
+                changeMenu(GApplication.getInstance().getIconsDevices());
+                break;
+            case R.id.nav_editor:
+                setTitle(R.string.editors);
+                changeMenu(GApplication.getInstance().getIconEditors());
+                break;
+            case R.id.nav_file:
+                setTitle(R.string.files);
+                changeMenu(GApplication.getInstance().getIconFiles());
+                break;
         }
 
 
