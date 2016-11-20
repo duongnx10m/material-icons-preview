@@ -5,6 +5,8 @@ package com.duongnx.materialicons;
  */
 
 public class Defines {
+    public static final String GIT_GOOGLE = "https://github.com/google/material-design-icons/";
+
     public static final String MORE_APPS = "https://play.google.com/store/apps/developer?id=Conduit+Apps";
     public static final String RATE = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID;
 

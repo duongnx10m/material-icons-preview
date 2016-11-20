@@ -323,12 +323,6 @@ public class GenerateHelper {
         return iconsDevices;
     }
 
-    public static ArrayList<ItemIcon> getIconEditors() {
-        ArrayList<ItemIcon> iconEditors = new ArrayList<>();
-        iconEditors.add(new ItemIcon(R.drawable.ic_attach_file_black_120dp, "Attachment"));
-        return iconEditors;
-    }
-
     public static ArrayList<ItemIcon> getIconFiles() {
         ArrayList<ItemIcon> iconFiles = new ArrayList<>();
         iconFiles.add(new ItemIcon(R.drawable.ic_attachment_black_120dp, "Attachment"));
@@ -345,5 +339,29 @@ public class GenerateHelper {
         iconFiles.add(new ItemIcon(R.drawable.ic_folder_black_120dp, "Folder"));
         iconFiles.add(new ItemIcon(R.drawable.ic_folder_shared_black_120dp, "Folder Shared"));
         return iconFiles;
+    }
+
+    public static ArrayList<ItemIcon> getIconEditors() {
+        ArrayList<ItemIcon> iconEditors = new ArrayList<>();
+        iconEditors.add(new ItemIcon(R.drawable.ic_attach_file_black_120dp, "Attachment"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_attach_money_black_120dp, "Money"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_all_black_120dp, "Border All"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_bottom_black_120dp, "Border Bottom"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_clear_black_120dp, "Border Clear"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_color_black_120dp, "Border Color"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_horizontal_black_120dp, "Border Horizontal"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_inner_black_120dp, "Border Inner"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_left_black_120dp, "Border Left"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_outer_black_120dp, "Border Outline"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_right_black_120dp, "Border Right"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_style_black_120dp, "Border Style"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_top_black_120dp, "Border Top"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_border_vertical_black_120dp, "Border Vertical"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_drag_handle_black_120dp, "Drag Handle"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_format_align_center_black_120dp, "Align Center"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_format_align_justify_black_120dp, "Align Justify"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_format_align_left_black_120dp, "Align Left"));
+        iconEditors.add(new ItemIcon(R.drawable.ic_format_align_right_black_120dp, "Align Right"));
+        return iconEditors;
     }
 }

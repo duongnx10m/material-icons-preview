@@ -39,6 +39,7 @@
             android:id="@+id/nav_file"
             android:icon="@drawable/ic_folder_open_black_120dp"
             android:title="@string/files" />
+
     </group>
 
 </menu>
