@@ -1,10 +1,12 @@
 package com.duongnx.materialicons.models;
 
+import java.io.Serializable;
+
 /**
  * Created by duongnx on 11/18/16.
  */
 
-public class ItemIcon {
+public class ItemIcon implements Serializable {
     private int resId;
     private String name;
 

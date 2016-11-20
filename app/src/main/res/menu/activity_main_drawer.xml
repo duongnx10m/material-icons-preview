@@ -3,37 +3,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Action" />
+            android:id="@+id/nav_action"
+            android:checked="true"
+            android:icon="@drawable/ic_assessment_black_120dp"
+            android:title="@string/actions" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Alert" />
+            android:id="@+id/nav_alert"
+            android:icon="@drawable/ic_add_alert_black_48dp"
+            android:title="@string/alerts" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Av" />
+            android:id="@+id/nav_av"
+            android:icon="@drawable/ic_album_black_120dp"
+            android:title="@string/avs" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Communication" />
+            android:id="@+id/nav_communication"
+            android:icon="@drawable/ic_business_black_120dp"
+            android:title="@string/communications" />
 
         <item
             android:id="@+id/nav_content"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Content" />
+            android:icon="@drawable/ic_move_to_inbox_black_120dp"
+            android:title="@string/contents" />
 
     </group>
-
-    <item android:title="">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Setting" />
-
-        </menu>
-    </item>
 
 </menu>

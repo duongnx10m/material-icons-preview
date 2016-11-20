@@ -1,5 +1,6 @@
 package com.duongnx.materialicons;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,9 +16,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.duongnx.materialicons.fragments.FrgIconPreview;
+import com.duongnx.materialicons.models.ItemIcon;
+import com.duongnx.materialicons.utils.Utils;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private FrgIconPreview mFrgCurrent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +47,21 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        setTitle(R.string.actions);
+        changeMenu(GApplication.getInstance().getIconActions());
+    }
+
+    public void changeMenu(ArrayList<ItemIcon> itemIcons) {
+        FrgIconPreview frgIconPreview = new FrgIconPreview();
+        frgIconPreview.setItemIcons(itemIcons);
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.content, new FrgIconPreview());
+        fragmentTransaction.replace(R.id.content, frgIconPreview);
         fragmentTransaction.commitAllowingStateLoss();
+        mFrgCurrent = frgIconPreview;
     }
 
     @Override
@@ -62,47 +77,70 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.menu_color:
+                Intent intent = new Intent(this, ColorActivity.class);
+                startActivityForResult(intent, Defines.REQUEST_CODE);
+                break;
+            case R.id.menu_rate:
+                Utils.startActivityWithUrl(this, Defines.RATE);
+                break;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+            case R.id.menu_more:
+                Utils.startActivityWithUrl(this, Defines.MORE_APPS);
+                break;
         }
 
-        return super.onOptionsItemSelected(item);
+
+        return true;
     }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        switch (item.getItemId()) {
+            case R.id.nav_action:
+                setTitle(R.string.actions);
+                changeMenu(GApplication.getInstance().getIconActions());
+                break;
+            case R.id.nav_alert:
+                setTitle(R.string.alerts);
+                changeMenu(GApplication.getInstance().getIconAlerts());
+                break;
+            case R.id.nav_av:
+                setTitle(R.string.avs);
+                changeMenu(GApplication.getInstance().getIconAVs());
+                break;
+            case R.id.nav_communication:
+                setTitle(R.string.communications);
+                changeMenu(GApplication.getInstance().getIconCommunications());
+                break;
+            case R.id.nav_content:
+                setTitle(R.string.contents);
+                changeMenu(GApplication.getInstance().getIconContents());
+                break;
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && requestCode == Defines.REQUEST_CODE) {
+            if (mFrgCurrent != null) {
+                mFrgCurrent.notifyChanged();
+            }
+        }
     }
 }

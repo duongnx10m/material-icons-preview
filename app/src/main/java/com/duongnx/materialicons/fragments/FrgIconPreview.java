@@ -21,6 +21,12 @@ import java.util.ArrayList;
 public class FrgIconPreview extends FrgBase {
     private RecyclerView recyclerView;
     private AdapterIconPreview mAdapter;
+    private ArrayList<ItemIcon> itemIcons;
+
+
+    public void setItemIcons(ArrayList<ItemIcon> itemIcons) {
+        this.itemIcons = itemIcons;
+    }
 
     @Nullable
     @Override
@@ -33,9 +39,15 @@ public class FrgIconPreview extends FrgBase {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        if (mAdapter == null) {
-            mAdapter = new AdapterIconPreview(mActivity, GApplication.getInstance().getIconActions());
+        if (mAdapter == null && itemIcons != null) {
+            mAdapter = new AdapterIconPreview(mActivity, itemIcons);
         }
         recyclerView.setAdapter(mAdapter);
+    }
+
+    public void notifyChanged() {
+        if (mAdapter != null) {
+            mAdapter.notifyDataSetChanged();
+        }
     }
 }

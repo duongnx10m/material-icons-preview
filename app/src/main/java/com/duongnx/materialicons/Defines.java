@@ -1,0 +1,13 @@
+package com.duongnx.materialicons;
+
+/**
+ * Created by duongnx on 11/19/16.
+ */
+
+public class Defines {
+    public static final String MORE_APPS = "https://play.google.com/store/apps/developer?id=Conduit+Apps";
+    public static final String RATE = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID;
+
+    public static final String KEY_DATA = "key_data";
+    public static final int REQUEST_CODE = 101;
+}
